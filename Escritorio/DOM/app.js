@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   h4.appendChild(span);
 
   const span2 = document.createElement("span");
-  const text2 = document.createTextNode("4");
+  const text2 = document.createTextNode("3");
   span2.appendChild(text2);
   span2.classList.add("badge", "badge-secondary", "badge-pill");
   h4.appendChild(span2);
@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   li.appendChild(div3);
 
   var h6 = document.createElement("h6");
-  const product = document.createTextNode("Product name");
+  const product = document.createTextNode("First Product");
   h6.appendChild(product);
-  h6.classList.add("my-0");
+  h6.classList.add("my-1");
   div3.appendChild(h6);
   var small = document.createElement("small");
   const description = document.createTextNode("Brief description");
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var secondh6 = document.createElement("h6");
   const product2 = document.createTextNode("Second product");
   secondh6.appendChild(product2);
-  secondh6.classList.add("my-0");
+  secondh6.classList.add("my-1");
   div4.appendChild(secondh6);
   var small2 = document.createElement("small");
   const description2 = document.createTextNode("Brief description");
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var thirdh6 = document.createElement("h6");
   const product3 = document.createTextNode("Third product");
   thirdh6.appendChild(product3);
-  thirdh6.classList.add("my-0");
+  thirdh6.classList.add("my-1");
   div5.appendChild(thirdh6);
   var small3 = document.createElement("small");
   const description3 = document.createTextNode("Brief description");
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var promoh6 = document.createElement("h6");
   const product4 = document.createTextNode("Promo code");
   promoh6.appendChild(product4);
-  promoh6.classList.add("my-0", "text-success");
+  promoh6.classList.add("my-1", "text-success");
   div6.appendChild(promoh6);
   var small4 = document.createElement("small");
   const description4 = document.createTextNode("EXAMPLECODE");
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   li5.appendChild(strong);
 
    //-----------------------------------------------------------------
-   
+
   var form = document.createElement("form");
   form.classList.add("card", "p-2");
   div2.appendChild(form);
