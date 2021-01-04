@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Invoice_Supplier: MyString
+  Supplier_Id: MyString
+  Id_Product: one
+  Net_Value: 1
+  Brute_Value: 
+  IVA: 1.5
+
+two:
+  Id_Invoice_Supplier: MyString
+  Supplier_Id: MyString
+  Id_Product: two
+  Net_Value: 1
+  Brute_Value: 
+  IVA: 1.5

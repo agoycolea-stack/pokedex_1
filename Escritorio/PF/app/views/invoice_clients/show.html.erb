@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id invoice client:</strong>
+  <%= @invoice_client.Id_Invoice_Client %>
+</p>
+
+<p>
+  <strong>Client id:</strong>
+  <%= @invoice_client.Client_Id %>
+</p>
+
+<p>
+  <strong>Id product:</strong>
+  <%= @invoice_client.Id_Product %>
+</p>
+
+<p>
+  <strong>Net value:</strong>
+  <%= @invoice_client.Net_Value %>
+</p>
+
+<p>
+  <strong>Brute value:</strong>
+  <%= @invoice_client.Brute_Value %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @invoice_client.IVA %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_client_path(@invoice_client) %> |
+<%= link_to 'Back', invoice_clients_path %>

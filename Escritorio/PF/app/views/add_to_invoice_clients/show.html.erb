@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document id:</strong>
+  <%= @add_to_invoice_client.Document_ID %>
+</p>
+
+<p>
+  <strong>Product id:</strong>
+  <%= @add_to_invoice_client.Product_Id %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @add_to_invoice_client.Quantity %>
+</p>
+
+<p>
+  <strong>Previous quantity:</strong>
+  <%= @add_to_invoice_client.Previous_Quantity %>
+</p>
+
+<p>
+  <strong>Post quantity:</strong>
+  <%= @add_to_invoice_client.Post_Quantity %>
+</p>
+
+<%= link_to 'Edit', edit_add_to_invoice_client_path(@add_to_invoice_client) %> |
+<%= link_to 'Back', add_to_invoice_clients_path %>

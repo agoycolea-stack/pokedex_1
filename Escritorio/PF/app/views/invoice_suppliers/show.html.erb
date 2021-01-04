@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id invoice supplier:</strong>
+  <%= @invoice_supplier.Id_Invoice_Supplier %>
+</p>
+
+<p>
+  <strong>Supplier id:</strong>
+  <%= @invoice_supplier.Supplier_Id %>
+</p>
+
+<p>
+  <strong>Id product:</strong>
+  <%= @invoice_supplier.Id_Product %>
+</p>
+
+<p>
+  <strong>Net value:</strong>
+  <%= @invoice_supplier.Net_Value %>
+</p>
+
+<p>
+  <strong>Brute value:</strong>
+  <%= @invoice_supplier.Brute_Value %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @invoice_supplier.IVA %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_supplier_path(@invoice_supplier) %> |
+<%= link_to 'Back', invoice_suppliers_path %>
