@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Document_ID: one
+  Product_Id: one
+  Quantity: 1.5
+  Previous_Quantity: 1.5
+  Post_Quantity: 
+
+two:
+  Document_ID: two
+  Product_Id: two
+  Quantity: 1.5
+  Previous_Quantity: 1.5
+  Post_Quantity: 

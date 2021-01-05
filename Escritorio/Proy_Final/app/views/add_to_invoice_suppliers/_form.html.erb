@@ -1,0 +1,42 @@
+<%= form_with(model: add_to_invoice_supplier, local: true) do |form| %>
+  <% if add_to_invoice_supplier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(add_to_invoice_supplier.errors.count, "error") %> prohibited this add_to_invoice_supplier from being saved:</h2>
+
+      <ul>
+      <% add_to_invoice_supplier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Document_ID_id %>
+    <%= form.text_field :Document_ID_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Product_Id_id %>
+    <%= form.text_field :Product_Id_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Quantity %>
+    <%= form.text_field :Quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Previous_Quantity %>
+    <%= form.text_field :Previous_Quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Post_Quantity %>
+    <%= form.text_field :Post_Quantity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

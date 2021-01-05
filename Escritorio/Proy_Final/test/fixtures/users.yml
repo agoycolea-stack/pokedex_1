@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: MyString
+  rol: MyString
+  arearut: MyString
+
+two:
+  id: MyString
+  rol: MyString
+  arearut: MyString
