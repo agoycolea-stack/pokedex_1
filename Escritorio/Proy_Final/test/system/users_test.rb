@@ -14,7 +14,7 @@ class UsersTest < ApplicationSystemTestCase
     visit users_url
     click_on "New User"
 
-    fill_in "Arearut", with: @user.arearut
+    fill_in "Area", with: @user.area
     fill_in "Id", with: @user.id
     fill_in "Rol", with: @user.rol
     click_on "Create User"
@@ -27,7 +27,7 @@ class UsersTest < ApplicationSystemTestCase
     visit users_url
     click_on "Edit", match: :first
 
-    fill_in "Arearut", with: @user.arearut
+    fill_in "Area", with: @user.area
     fill_in "Id", with: @user.id
     fill_in "Rol", with: @user.rol
     click_on "Update User"

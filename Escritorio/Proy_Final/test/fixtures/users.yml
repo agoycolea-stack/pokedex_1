@@ -3,9 +3,9 @@
 one:
   id: MyString
   rol: MyString
-  arearut: MyString
+  area: MyString
 
 two:
   id: MyString
   rol: MyString
-  arearut: MyString
+  area: MyString

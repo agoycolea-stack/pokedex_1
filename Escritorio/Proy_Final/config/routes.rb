@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :invoice_clients
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   resources :roles
   resources :clients
   resources :suppliers
+
+  get 'invoice_clients/my_invoice' , to: "invoice_clients#my_invoice"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   #unauthenticated :user do

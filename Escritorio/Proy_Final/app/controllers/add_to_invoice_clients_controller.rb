@@ -69,6 +69,9 @@ class AddToInvoiceClientsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def add_to_invoice_client_params
-      params.require(:add_to_invoice_client).permit(:Document_ID_id, :Product_Id_id, :Quantity, :Previous_Quantity, :Post_Quantity)
+      params.require(:add_to_invoice_client).permit(:Document_ID_id, :Product_Id_id, :Quantity, :Previous_Quantity, :Post_Quantity),
+      add_products_attributes: [:product_id, :price, :quantity, :total_product_amount],
+      add_clients_attributes: [:client_id, :business_name],
+      add_orders_attributes: [:order_id, :client_id, :user_id, :delivery_method_id])
     end
 end
